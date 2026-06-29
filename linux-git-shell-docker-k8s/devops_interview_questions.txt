@@ -1,0 +1,456 @@
+================================================================================
+                    200 DEVOPS INTERVIEW QUESTIONS
+                    For 3-4 Years Experience Level
+================================================================================
+
+Topics Covered:
+1. Linux Fundamentals & Administration (40 questions)
+2. Shell Scripting (35 questions)
+3. Git & GitHub (35 questions)
+4. Docker (45 questions)
+5. Kubernetes (45 questions)
+
+================================================================================
+SECTION 1: LINUX FUNDAMENTALS & ADMINISTRATION (40 Questions)
+================================================================================
+
+1. Explain the Linux directory structure. What are the purposes of /, /home, /var, /tmp, /etc, and /usr?
+
+2. What is inode in Linux? How is it related to hardlinks and softlinks?
+
+3. Difference between hardlink and softlink. When would you use each?
+
+4. What are file permissions in Linux? Explain chmod and chown commands with examples.
+
+5. Explain the meaning of each permission mode: 755, 644, 777.
+
+6. What is sudo and sudoers file? How do you configure sudo access for a user?
+
+7. Explain process management in Linux. What are process states?
+
+8. How do you find process consuming most CPU/Memory? Explain top, htop, ps commands.
+
+9. What is the difference between foreground and background processes?
+
+10. How do you kill a process? Explain kill, killall, pkill commands.
+
+11. What are environment variables in Linux? How do you set and persist them?
+
+12. Difference between PATH and LD_LIBRARY_PATH. Why are they important?
+
+13. What is the difference between absolute and relative paths?
+
+14. Explain pipe (|), redirection (>, >>, <), and stderr redirection (2>).
+
+15. What is /dev/null? Why is it used?
+
+16. How do you monitor disk usage? Explain df, du, and ncdu commands.
+
+17. What is LVM (Logical Volume Manager)? Why is it used?
+
+18. Explain mount and unmount operations. How do you mount a filesystem permanently?
+
+19. What is /etc/fstab? How do you add a new filesystem there?
+
+20. What is a cron job? How do you schedule tasks using crontab?
+
+21. Explain the structure of a crontab entry. Give examples for common scheduling.
+
+22. What is systemd? How does it differ from init systems?
+
+23. Explain systemctl commands for managing services.
+
+24. What is the difference between systemctl start/enable/restart/reload?
+
+25. How do you create a custom systemd service? Walk through the process.
+
+26. What is SELinux and AppArmor? Why are they used?
+
+27. How do you manage package installation in different Linux distributions? (apt, yum, dnf)
+
+28. What is the difference between apt and apt-get?
+
+29. How do you find which package provides a specific binary or library?
+
+30. Explain networking basics: IP addresses, subnets, gateway, DNS.
+
+31. How do you configure network interfaces in Ubuntu/CentOS?
+
+32. What is ifconfig, ip, netstat, ss, and netplan?
+
+33. How do you troubleshoot network connectivity? Explain ping, traceroute, telnet, nslookup.
+
+34. What is hostname and FQDN? How do you change them?
+
+35. Explain user and group management (useradd, userdel, groupadd, id).
+
+36. What is /etc/passwd, /etc/shadow, and /etc/group files?
+
+37. How do you reset a forgotten root password?
+
+38. Explain SSH keys and key-based authentication.
+
+39. How do you troubleshoot SSH connection issues?
+
+40. What is a bastion host and how does it relate to SSH?
+
+================================================================================
+SECTION 2: SHELL SCRIPTING (35 Questions)
+================================================================================
+
+41. What is a shell? Difference between bash, sh, zsh, ksh.
+
+42. How do you write a basic shell script? Explain shebang.
+
+43. What are variables in bash? How do you define and use them?
+
+44. Difference between local and exported variables.
+
+45. What are positional parameters ($0, $1, $2) and special parameters ($*, $@, $#, $?)?
+
+46. Explain the difference between $* and $@.
+
+47. How do you read user input in a shell script? Explain read command.
+
+48. What are conditional statements in bash? Explain if-elif-else.
+
+49. What is test command? Explain [ ] and [[ ]] differences.
+
+50. How do you write loops in bash? Explain for, while, until.
+
+51. Explain case statement with an example.
+
+52. What are functions in bash? How do you define and call them?
+
+53. How do you pass arguments to functions and return values?
+
+54. Explain arithmetic in bash. What are (()), let, expr, bc?
+
+55. How do you compare strings and numbers in bash?
+
+56. What is string manipulation in bash? Explain parameter expansion.
+
+57. Explain ${variable%pattern}, ${variable#pattern}, ${variable/old/new}.
+
+58. What is array in bash? How do you define and access array elements?
+
+59. How do you iterate over arrays in bash?
+
+60. What is associative array in bash? How do you use it?
+
+61. Explain command substitution with $(command) and `command`.
+
+62. What are pipes and how do you use them in scripts?
+
+63. What is redirection? Explain >, >>, <, <<, <<<.
+
+64. What is heredoc? Give an example of when you'd use it.
+
+65. How do you handle errors in a shell script? Explain error checking.
+
+66. What is set -e, set -u, set -x, and set -o pipefail?
+
+67. How do you debug a shell script?
+
+68. What is trap command? How do you use it for cleanup?
+
+69. Explain xargs command and its usage.
+
+70. What is sed and awk? When would you use each?
+
+71. Give 3 practical examples of sed for text manipulation.
+
+72. What is grep? Explain grep, egrep, fgrep.
+
+73. How do you use regular expressions in grep?
+
+74. What is find command? Give examples for common searches.
+
+75. Explain the difference between find and locate commands.
+
+================================================================================
+SECTION 3: GIT & GITHUB (35 Questions)
+================================================================================
+
+76. What is Git? Explain distributed version control.
+
+77. What is the difference between Git and GitHub?
+
+78. Explain Git workflow: working directory, staging area, repository.
+
+79. What are git add, git commit, git push, git pull?
+
+80. Explain git status, git log, git diff commands.
+
+81. What is a branch? Why are branches important?
+
+82. How do you create, switch, and delete branches?
+
+83. Explain git checkout vs git switch commands.
+
+84. What is a merge? How do you merge branches?
+
+85. What is a merge conflict? How do you resolve it?
+
+86. Explain fast-forward merge vs three-way merge.
+
+87. What is rebase? How does it differ from merge?
+
+88. When would you use rebase vs merge?
+
+89. Explain git pull vs git pull --rebase.
+
+90. What is git cherry-pick? When would you use it?
+
+91. What is stashing in Git? Explain git stash commands.
+
+92. How do you rename or delete a commit message?
+
+93. What is git reset vs git revert?
+
+94. Explain --soft, --mixed, and --hard flags in reset.
+
+95. What is git tag? How do you create and push tags?
+
+96. How do you undo changes in Git?
+
+97. What is .gitignore? Give examples of files to ignore.
+
+98. Explain git remote commands (add, remove, show, rename).
+
+99. What is origin and upstream in Git?
+
+100. How do you contribute to an open-source project on GitHub?
+
+101. What is a pull request? How do you create one?
+
+102. Explain fork vs clone on GitHub.
+
+103. What is a Git workflow? Explain Git Flow and GitHub Flow.
+
+104. What are Git hooks? Give examples of pre-commit hooks.
+
+105. How do you automate Git operations using hooks?
+
+106. What is git bisect? When would you use it?
+
+107. Explain git grep command.
+
+108. What is git reflog? How is it useful?
+
+109. How do you squash commits?
+
+110. What is commit signing and GPG keys in Git?
+
+================================================================================
+SECTION 4: DOCKER (45 Questions)
+================================================================================
+
+111. What is Docker? Explain containers vs virtual machines.
+
+112. What are the key components of Docker? (Images, Containers, Registry)
+
+113. What is Dockerfile? Explain FROM, RUN, CMD, ENTRYPOINT, COPY, ADD, EXPOSE.
+
+114. Difference between CMD and ENTRYPOINT.
+
+115. Difference between COPY and ADD in Dockerfile.
+
+116. What is a Docker image? How do you create one?
+
+117. How do you run a Docker container? Explain docker run options.
+
+118. What are port mappings in Docker? Explain -p flag.
+
+119. How do you access Docker container logs?
+
+120. What is docker exec? How do you execute commands in running containers?
+
+121. How do you mount volumes in Docker? Explain -v and --mount flags.
+
+122. What is the difference between bind mount, named volume, and tmpfs mount?
+
+123. What is Docker networking? Explain bridge, host, overlay networks.
+
+124. How do you communicate between containers on the same network?
+
+125. How do you create a custom Docker network?
+
+126. What is docker-compose? Why is it used?
+
+127. Explain docker-compose.yml structure.
+
+128. How do you orchestrate multi-container applications with docker-compose?
+
+129. How do you override docker-compose settings?
+
+130. What is Docker registry? Difference between Docker Hub and private registry.
+
+131. How do you push and pull images from a registry?
+
+132. What is image tagging? How do you tag images?
+
+133. How do you build multi-stage Docker images?
+
+134. What are the benefits of multi-stage builds?
+
+135. What is Docker layer caching? How do you optimize builds?
+
+136. Explain Dockerfile best practices for security and optimization.
+
+137. What is .dockerignore? How is it similar to .gitignore?
+
+138. How do you optimize Docker image size?
+
+139. What are Docker security best practices?
+
+140. How do you run containers with limited resources (CPU, memory)?
+
+141. What is docker inspect command? What information does it provide?
+
+142. How do you manage Docker images? (prune, remove, tag)
+
+143. What is container health checks? How do you define them?
+
+144. How do you pass environment variables to Docker containers?
+
+145. What is Docker secrets and configs in Swarm mode?
+
+146. Explain Docker restart policies.
+
+147. How do you monitor Docker containers?
+
+148. What are Docker container links (legacy) vs networks?
+
+149. How do you persist data in Docker containers?
+
+150. What is a Docker volume driver? Explain common ones.
+
+151. How do you backup and restore Docker volumes?
+
+152. Explain container logging drivers in Docker.
+
+153. What is Docker API? Can you interact with it programmatically?
+
+154. How do you troubleshoot Docker issues?
+
+155. What is Docker content trust and image signing?
+
+================================================================================
+SECTION 5: KUBERNETES (45 Questions)
+================================================================================
+
+156. What is Kubernetes? Explain container orchestration.
+
+157. What are the main components of Kubernetes architecture?
+
+158. Explain Master node components: API Server, Scheduler, Controller Manager, etcd.
+
+159. Explain Worker node components: kubelet, kube-proxy, container runtime.
+
+160. What is kubectl? How do you interact with Kubernetes clusters?
+
+161. What is a Pod? Why is it the smallest deployable unit?
+
+162. Can you run multiple containers in a Pod? When would you?
+
+163. What is a sidecar container? Give an example.
+
+164. What are Kubernetes labels and selectors? How do you use them?
+
+165. What are annotations in Kubernetes? How do they differ from labels?
+
+166. What is a Deployment? How do you create and manage deployments?
+
+167. What is a ReplicaSet? How does it relate to Deployment?
+
+168. Explain rolling update strategy in Kubernetes.
+
+169. What is maxSurge and maxUnavailable in rolling updates?
+
+170. How do you rollback a Deployment?
+
+171. What are StatefulSets? When would you use them over Deployments?
+
+172. What is a DaemonSet? Give examples of DaemonSet use cases.
+
+173. What is a Job and CronJob in Kubernetes?
+
+174. What is a Service in Kubernetes? Explain ClusterIP, NodePort, LoadBalancer.
+
+175. What is an Ingress? How does it differ from a Service?
+
+176. How do you expose applications running in Kubernetes?
+
+177. What is Headless Service? When would you use it?
+
+178. What is a ConfigMap? How do you use it?
+
+179. What is a Secret? Explain different types of secrets.
+
+180. How do you mount ConfigMaps and Secrets in Pods?
+
+181. What is a PersistentVolume (PV)? How does it differ from a volume?
+
+182. What is a PersistentVolumeClaim (PVC)?
+
+183. Explain storage classes in Kubernetes.
+
+184. What is dynamic provisioning of persistent volumes?
+
+185. Explain access modes in PersistentVolumes (ReadWriteOnce, ReadOnlyMany, etc).
+
+186. What are resource requests and limits in Kubernetes?
+
+187. Explain CPU and memory requests/limits.
+
+188. What is QoS (Quality of Service) in Kubernetes?
+
+189. What is Namespace in Kubernetes? How do you use them?
+
+190. How do you implement Network Policies in Kubernetes?
+
+191. What is RBAC (Role-Based Access Control) in Kubernetes?
+
+192. Explain Role, ClusterRole, RoleBinding, ClusterRoleBinding.
+
+193. What is a ServiceAccount? How do you use it?
+
+194. How do you scale Deployments in Kubernetes? (manual and autoscaling)
+
+195. What is Horizontal Pod Autoscaler (HPA)? How does it work?
+
+196. What is Vertical Pod Autoscaler (VPA)?
+
+197. What is Cluster Autoscaler? How does it differ from HPA?
+
+198. How do you monitor Kubernetes clusters? Explain Prometheus and Grafana.
+
+199. What is a Helm chart? How do you use Helm for package management?
+
+200. Explain common Kubernetes troubleshooting commands and techniques.
+
+================================================================================
+                              BONUS TIPS
+================================================================================
+
+General Preparation Tips:
+- Be ready to explain real-world scenarios and use cases
+- Practice hands-on labs (create clusters, deploy apps, troubleshoot)
+- Understand not just "how" but also "why" behind each concept
+- Be familiar with recent trends: GitOps, Service Mesh, Serverless
+- Prepare examples from your own projects
+- Understand security best practices across all topics
+- Know common DevOps tools: Jenkins, ArgoCD, Prometheus, ELK Stack, etc.
+
+For 3-4 Years Experience:
+- You're expected to handle production issues independently
+- Know infrastructure-as-code concepts (Terraform, CloudFormation)
+- Understand CI/CD pipeline design and implementation
+- Be familiar with cloud platforms (AWS, Azure, GCP)
+- Know monitoring, logging, and alerting strategies
+- Understand capacity planning and cost optimization
+
+================================================================================
+                          END OF DOCUMENT
+================================================================================
